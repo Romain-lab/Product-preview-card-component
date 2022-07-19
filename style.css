@@ -1,19 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 :root {
-    --darkcyan: hsl(158, 36%, 37%);
-    --cream: hsl(30, 38%, 92%);
-    --verydarkblue: hsl(212, 21%, 14%);
-    --darkgrayishblue: hsl(228, 12%, 48%);
-    --white: hsl(0, 0%, 100%);
+  --darkcyan: hsl(158, 36%, 37%);
+  --bg: hsl(30, 38%, 92%);
+  --verydarkblue: hsl(212, 21%, 14%);
+  --darkgrayishblue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
 }
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product {
+  background-color: var(--white);
+  display: flex;
+  width: 700px;
+  border-radius: 15px;
+}
+.product__img {
+  color: red;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=style.css.map */
